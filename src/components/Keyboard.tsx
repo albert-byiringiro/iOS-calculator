@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "./Button";
 
 interface KeyboardProps {
   display: string;
@@ -10,31 +10,6 @@ interface KeyboardProps {
   onPercentage: () => void;
   onToggleSign: () => void;
 }
-
-// Reusable Button component
-const Button: React.FC<{
-  value: string;
-  onClick: () => void;
-  className?: string;
-  span?: number;
-}> = ({ value, onClick, className = "", span = 1 }) => (
-  <button
-    className={`
-
-      px-1 py-8 border border-gray-700 text-3xl font-semibold
-
-      flex justify-center items-center cursor-pointer
-
-      ${span > 1 ? `col-span-${span}` : ""}
-
-      ${className}
-
-    `}
-    onClick={onclick}
-  >
-    {value}
-  </button>
-);
 
 export default function Keyboard({
   display,
@@ -51,6 +26,54 @@ export default function Keyboard({
       {/* display area */}
       <div className="bg-gray-700 p-4 text-right">
                 <span className="text-white text-6xl">{display}</span>
+      </div>
+      {/* button grid */}
+      <div className="grid grid-cols-4">
+        {/* top row */}
+        <Button value="AC" onClick={onClear} className="bg-gray-300" />
+        <Button value="±" onClick={onToggleSign} className="bg-gray-300" />
+        <Button value="%" onClick={onPercentage} className="bg-gray-300" />
+        <Button
+          value="÷"
+          onClick={() => onOperatorInput("÷")}
+          className="bg-orange-400 text-white"
+        />
+        {[7, 8, 9, 4, 5, 6, 1, 2, 3].map((num) => (
+          <Button
+            key={num}
+            value={String(num)}
+            onClick={() => onNumberInput(String(num))}
+            className="bg-gray-300"
+          />
+        ))}
+        <Button
+          value="x"
+          onClick={() => onOperatorInput("x")}
+          className="bg-orange-400 text-white"
+        />
+        <Button
+          value="-"
+          onClick={() => onOperatorInput("-")}
+          className="bg-orange-400 text-white"
+        />
+        <Button
+          value="+"
+          onClick={() => onOperatorInput("+")}
+          className="bg-orange-400 text-white"
+        />
+                {/* Bottom row */}
+        <Button
+          value="0"
+          onClick={() => onNumberInput("0")}
+          className="bg-gray-300"
+          span={2}
+        />
+                <Button value="." onClick={onDecimal} className="bg-gray-300" />
+        <Button
+          value="="
+          onClick={onEquals}
+          className="bg-orange-400 text-white"
+        />
       </div>
     </main>
   );
