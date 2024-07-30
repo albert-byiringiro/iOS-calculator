@@ -95,7 +95,7 @@ export default function App() {
     <Keyboard
       display={display}
       onNumberInput={handleNumberInput}
-      onPeratorInput={handleOperatorInput}
+      onOperatorInput={handleOperatorInput}
       onEquals={handleEquals}
       onClear={handleClear}
       onDecimal={handleDecimal}
