@@ -91,5 +91,16 @@ export default function App() {
     setDisplay(String(-parseFloat(display)));
   };
 
-  return <Keyboard />;
+  return (
+    <Keyboard
+      display={display}
+      onNumberInput={handleNumberInput}
+      onPeratorInput={handleOperatorInput}
+      onEquals={handleEquals}
+      onClear={handleClear}
+      onDecimal={handleDecimal}
+      onPercentage={handlePercentage}
+      onToggleSign={handleToggleSign}
+    />
+  );
 }
