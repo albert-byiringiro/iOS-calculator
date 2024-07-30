@@ -7,79 +7,79 @@ export default function App() {
         </span>
       </div>
       <form className="grid grid-cols-4">
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           AC
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           +/-
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           %
         </button>
 
-        <button className="px-1 py-8  border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-500 text-white">
+        <button className="px-1 hover:bg-[#dfb07e] py-8  border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-400 text-white">
           /
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           7
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           8
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           9
         </button>
 
-        <button className="px-1 py-8  border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-500 text-white">
+        <button className="px-1 hover:bg-[#dfb07e] py-8  border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-400 text-white">
           X
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           4
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           5
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           6
         </button>
 
-        <button className="px-1 py-8 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-500 text-white">
+        <button className="px-1 hover:bg-[#dfb07e] py-8 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-400 text-white">
           -
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           1
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           2
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           3
         </button>
 
-        <button className="px-1 py-8 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-500 text-white">
+        <button className="px-1 hover:bg-[#dfb07e] py-8 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-400 text-white">
           +
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center col-span-2">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center col-span-2">
           0
         </button>
 
-        <button className="px-1 py-8 bg-gray-100 border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
+        <button className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center">
           .
         </button>
 
-        <button className="px-1 py-8  border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-500 text-white">
+        <button className="px-1 hover:bg-[#dfb07e] py-8  border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center bg-orange-400 text-white">
           =
         </button>
       </form>
