@@ -24,4 +24,17 @@ export default function App() {
         return b;
     }
   };
+
+  // Handle number input
+
+  const handleNumberInput = (num: string) => {
+    if (waitingForOperand) {
+      setDisplay(num);
+      setWaitingForOperand(false);
+    } else {
+      setDisplay(display === "0" ? num : display + num);
+    }
+  };
+
+  return <Keyboard />;
 }
