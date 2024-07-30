@@ -1,3 +1,10 @@
+import { ChangeEvent } from "react";
+
+interface Props {
+  selectNumber: (e: ChangeEvent<HTMLButtonElement>) => void;
+  selectSymbol: (e: ChangeEvent<HTMLButtonElement>) => void;
+}
+
 export default function Keyboard({ selectSymbol, selectNumber }) {
   return (
     <main className="grid max-w-[500px] mx-auto mt-4">
@@ -18,7 +25,9 @@ export default function Keyboard({ selectSymbol, selectNumber }) {
         <button
           className="px-1 hover:bg-[#ebebeb] py-8 bg-[#d8d9db] border-2 border-gray-600 text-3xl font-semibold flex justify-center content-center cursor-pointer"
           value={"±"}
-          onClick={(e) => selectSymbol(e)}
+          onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>
+            selectSymbol(e)
+          }
         >
           ±
         </button>
