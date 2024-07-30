@@ -35,3 +35,23 @@ const Button: React.FC<{
     {value}
   </button>
 );
+
+export default function Keyboard({
+  display,
+  onNumberInput,
+  onOperatorInput,
+  onEquals,
+  onClear,
+  onDecimal,
+  onPercentage,
+  onToggleSign,
+}: KeyboardProps) {
+  return (
+    <main className="max-w-[400px] mx-auto mt-4">
+      {/* display area */}
+      <div className="bg-gray-700 p-4 text-right">
+                <span className="text-white text-6xl">{display}</span>
+      </div>
+    </main>
+  );
+}
