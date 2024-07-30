@@ -65,5 +65,13 @@ export default function App() {
     }
   };
 
+  // clear all states
+  const handleClear = () => {
+    setDisplay("0");
+    setPrevValue(null);
+    setOperator(null);
+    setWaitingForOperand(false);
+  };
+
   return <Keyboard />;
 }
