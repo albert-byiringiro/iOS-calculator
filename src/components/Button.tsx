@@ -9,14 +9,19 @@ interface ButtonProps {
   span?: number;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  value,
-  onClick,
-  className = "",
-  span = 1,
-}) => (
+const Button: React.FC<{
+  value: string;
+  onClick: () => void;
+  className?: string;
+  span?: number;
+}> = ({ value, onClick, className = "", span = 1 }) => (
   <button
-    className={`px-1 py-8 border border-gray-700 text-3xl font-semibold flex justify-center items-center cursor-pointer ${span > 1 ? `col-span-${span}` : ""} ${className}`}
+    className={`
+      px-1 py-8 border border-gray-700 text-3xl font-semibold
+      flex justify-center items-center cursor-pointer
+      ${span > 1 ? `col-span-${span}` : ""}
+      ${className}
+    `}
     onClick={onClick}
   >
     {value}
