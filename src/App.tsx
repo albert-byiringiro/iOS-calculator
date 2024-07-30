@@ -73,5 +73,12 @@ export default function App() {
     setWaitingForOperand(false);
   };
 
+  // add decimal point
+  const handleDecimal = () => {
+    if (!display.includes(".")) {
+      setDisplay(display + ".");
+    }
+  };
+
   return <Keyboard />;
 }
