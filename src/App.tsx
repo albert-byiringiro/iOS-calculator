@@ -52,5 +52,18 @@ export default function App() {
     setOperator(op);
   };
 
+  // handle equals button
+  const handleEquals = () => {
+    const inputValue = parseFloat(display);
+
+    if (prevValue !== null && operator) {
+      const result = calculateResult(prevValue, inputValue, operator);
+      setDisplay(String(result));
+      setPrevValue(null);
+      setOperator(null);
+      setWaitingForOperand(true);
+    }
+  };
+
   return <Keyboard />;
 }
