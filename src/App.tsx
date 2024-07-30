@@ -80,11 +80,15 @@ export default function App() {
     }
   };
 
-  
   // calculate percentage
   const handlePercentage = () => {
     const currentValue = parseFloat(display);
     setDisplay(String(currentValue / 100));
+  };
+
+  // toggle sign (positive/ negative)
+  const handleToggleSign = () => {
+    setDisplay(String(-parseFloat(display)));
   };
 
   return <Keyboard />;
