@@ -36,5 +36,21 @@ export default function App() {
     }
   };
 
+  // handle operator input
+  const handleOperatorInput = (op: string) => {
+    const inputValue = parseFloat(display);
+
+    if (prevValue === null) {
+      setPrevValue(inputValue);
+    } else if (operator) {
+      const result = calculateResult(prevValue, inputValue, operator);
+      setPrevValue(result);
+      setDisplay(String(result));
+    }
+
+    setWaitingForOperand(true);
+    setOperator(op);
+  };
+
   return <Keyboard />;
 }
