@@ -38,7 +38,7 @@ export default function Keyboard({
           onClick={() => onOperatorInput("÷")}
           className="bg-orange-400 text-white"
         />
-        {[7, 8, 9, 4, 5, 6, 1, 2, 3].map((num) => (
+        {[7, 8, 9].map((num) => (
           <Button
             key={num}
             value={String(num)}
@@ -51,11 +51,27 @@ export default function Keyboard({
           onClick={() => onOperatorInput("x")}
           className="bg-orange-400 text-white"
         />
+        {[4, 5, 6].map((num) => (
+          <Button
+            key={num}
+            value={String(num)}
+            onClick={() => onNumberInput(String(num))}
+            className="bg-gray-300"
+          />
+        ))}
         <Button
           value="-"
           onClick={() => onOperatorInput("-")}
           className="bg-orange-400 text-white"
         />
+        {[1, 2, 3].map((num) => (
+          <Button
+            key={num}
+            value={String(num)}
+            onClick={() => onNumberInput(String(num))}
+            className="bg-gray-300"
+          />
+        ))}
         <Button
           value="+"
           onClick={() => onOperatorInput("+")}
