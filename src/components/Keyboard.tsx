@@ -81,8 +81,8 @@ export default function Keyboard({
         <Button
           value="0"
           onClick={() => onNumberInput("0")}
-          className="bg-gray-300"
-          span={2}
+          className="bg-gray-300 col-span-2"
+          // span={2}
         />
                 <Button value="." onClick={onDecimal} className="bg-gray-300" />
         <Button
