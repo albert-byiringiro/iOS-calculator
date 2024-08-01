@@ -1,17 +1,17 @@
+// src/types/calculator.ts
+
 export type Operator = "+" | "-" | "x" | "÷";
 
-export interface calculatorState {
+export interface CalculatorState {
   display: string;
-  preValue: number | null;
+  prevValue: number | null;
   operator: Operator | null;
   waitingForOperand: boolean;
 }
 
-export const INITIAL_STATE: calculatorState = {
+export const INITIAL_STATE: CalculatorState = {
   display: "0",
-  preValue: null,
+  prevValue: null,
   operator: null,
   waitingForOperand: false,
 };
-
-export const OPERATORS: Operator[] = ['+', '-', 'x', '÷'];
